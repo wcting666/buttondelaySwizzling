@@ -1,0 +1,598 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BB8C6F3E233C66650033064F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BB8C6F3D233C66650033064F /* AppDelegate.m */; };
+		BB8C6F41233C66650033064F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB8C6F40233C66650033064F /* ViewController.m */; };
+		BB8C6F44233C66650033064F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB8C6F42233C66650033064F /* Main.storyboard */; };
+		BB8C6F46233C66670033064F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB8C6F45233C66670033064F /* Assets.xcassets */; };
+		BB8C6F49233C66670033064F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB8C6F47233C66670033064F /* LaunchScreen.storyboard */; };
+		BB8C6F4C233C66670033064F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BB8C6F4B233C66670033064F /* main.m */; };
+		BB8C6F56233C66670033064F /* Wct_buttonDelaySwizzlingDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BB8C6F55233C66670033064F /* Wct_buttonDelaySwizzlingDemoTests.m */; };
+		BB8C6F61233C66670033064F /* Wct_buttonDelaySwizzlingDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = BB8C6F60233C66670033064F /* Wct_buttonDelaySwizzlingDemoUITests.m */; };
+		BB8C6F70233C66960033064F /* UIControl+ButtonDelaySwizzling_h.m in Sources */ = {isa = PBXBuildFile; fileRef = BB8C6F6F233C66960033064F /* UIControl+ButtonDelaySwizzling_h.m */; };
+		BB8C6F73233C66C10033064F /* UIButton+ButtonDelaySwizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = BB8C6F72233C66C10033064F /* UIButton+ButtonDelaySwizzling.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BB8C6F52233C66670033064F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BB8C6F31233C66650033064F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BB8C6F38233C66650033064F;
+			remoteInfo = Wct_buttonDelaySwizzlingDemo;
+		};
+		BB8C6F5D233C66670033064F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BB8C6F31233C66650033064F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BB8C6F38233C66650033064F;
+			remoteInfo = Wct_buttonDelaySwizzlingDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BB8C6F39233C66650033064F /* Wct_buttonDelaySwizzlingDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wct_buttonDelaySwizzlingDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB8C6F3C233C66650033064F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		BB8C6F3D233C66650033064F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BB8C6F3F233C66650033064F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		BB8C6F40233C66650033064F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		BB8C6F43233C66650033064F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BB8C6F45233C66670033064F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BB8C6F48233C66670033064F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BB8C6F4A233C66670033064F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB8C6F4B233C66670033064F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BB8C6F51233C66670033064F /* Wct_buttonDelaySwizzlingDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Wct_buttonDelaySwizzlingDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB8C6F55233C66670033064F /* Wct_buttonDelaySwizzlingDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Wct_buttonDelaySwizzlingDemoTests.m; sourceTree = "<group>"; };
+		BB8C6F57233C66670033064F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB8C6F5C233C66670033064F /* Wct_buttonDelaySwizzlingDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Wct_buttonDelaySwizzlingDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB8C6F60233C66670033064F /* Wct_buttonDelaySwizzlingDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Wct_buttonDelaySwizzlingDemoUITests.m; sourceTree = "<group>"; };
+		BB8C6F62233C66670033064F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB8C6F6E233C66960033064F /* UIControl+ButtonDelaySwizzling_h.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIControl+ButtonDelaySwizzling_h.h"; sourceTree = "<group>"; };
+		BB8C6F6F233C66960033064F /* UIControl+ButtonDelaySwizzling_h.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIControl+ButtonDelaySwizzling_h.m"; sourceTree = "<group>"; };
+		BB8C6F71233C66C10033064F /* UIButton+ButtonDelaySwizzling.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+ButtonDelaySwizzling.h"; sourceTree = "<group>"; };
+		BB8C6F72233C66C10033064F /* UIButton+ButtonDelaySwizzling.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+ButtonDelaySwizzling.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BB8C6F36233C66650033064F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB8C6F4E233C66670033064F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB8C6F59233C66670033064F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BB8C6F30233C66650033064F = {
+			isa = PBXGroup;
+			children = (
+				BB8C6F3B233C66650033064F /* Wct_buttonDelaySwizzlingDemo */,
+				BB8C6F54233C66670033064F /* Wct_buttonDelaySwizzlingDemoTests */,
+				BB8C6F5F233C66670033064F /* Wct_buttonDelaySwizzlingDemoUITests */,
+				BB8C6F3A233C66650033064F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BB8C6F3A233C66650033064F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BB8C6F39233C66650033064F /* Wct_buttonDelaySwizzlingDemo.app */,
+				BB8C6F51233C66670033064F /* Wct_buttonDelaySwizzlingDemoTests.xctest */,
+				BB8C6F5C233C66670033064F /* Wct_buttonDelaySwizzlingDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BB8C6F3B233C66650033064F /* Wct_buttonDelaySwizzlingDemo */ = {
+			isa = PBXGroup;
+			children = (
+				BB8C6F3C233C66650033064F /* AppDelegate.h */,
+				BB8C6F3D233C66650033064F /* AppDelegate.m */,
+				BB8C6F3F233C66650033064F /* ViewController.h */,
+				BB8C6F40233C66650033064F /* ViewController.m */,
+				BB8C6F6E233C66960033064F /* UIControl+ButtonDelaySwizzling_h.h */,
+				BB8C6F6F233C66960033064F /* UIControl+ButtonDelaySwizzling_h.m */,
+				BB8C6F71233C66C10033064F /* UIButton+ButtonDelaySwizzling.h */,
+				BB8C6F72233C66C10033064F /* UIButton+ButtonDelaySwizzling.m */,
+				BB8C6F42233C66650033064F /* Main.storyboard */,
+				BB8C6F45233C66670033064F /* Assets.xcassets */,
+				BB8C6F47233C66670033064F /* LaunchScreen.storyboard */,
+				BB8C6F4A233C66670033064F /* Info.plist */,
+				BB8C6F4B233C66670033064F /* main.m */,
+			);
+			path = Wct_buttonDelaySwizzlingDemo;
+			sourceTree = "<group>";
+		};
+		BB8C6F54233C66670033064F /* Wct_buttonDelaySwizzlingDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				BB8C6F55233C66670033064F /* Wct_buttonDelaySwizzlingDemoTests.m */,
+				BB8C6F57233C66670033064F /* Info.plist */,
+			);
+			path = Wct_buttonDelaySwizzlingDemoTests;
+			sourceTree = "<group>";
+		};
+		BB8C6F5F233C66670033064F /* Wct_buttonDelaySwizzlingDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BB8C6F60233C66670033064F /* Wct_buttonDelaySwizzlingDemoUITests.m */,
+				BB8C6F62233C66670033064F /* Info.plist */,
+			);
+			path = Wct_buttonDelaySwizzlingDemoUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BB8C6F38233C66650033064F /* Wct_buttonDelaySwizzlingDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB8C6F65233C66670033064F /* Build configuration list for PBXNativeTarget "Wct_buttonDelaySwizzlingDemo" */;
+			buildPhases = (
+				BB8C6F35233C66650033064F /* Sources */,
+				BB8C6F36233C66650033064F /* Frameworks */,
+				BB8C6F37233C66650033064F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Wct_buttonDelaySwizzlingDemo;
+			productName = Wct_buttonDelaySwizzlingDemo;
+			productReference = BB8C6F39233C66650033064F /* Wct_buttonDelaySwizzlingDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BB8C6F50233C66670033064F /* Wct_buttonDelaySwizzlingDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB8C6F68233C66670033064F /* Build configuration list for PBXNativeTarget "Wct_buttonDelaySwizzlingDemoTests" */;
+			buildPhases = (
+				BB8C6F4D233C66670033064F /* Sources */,
+				BB8C6F4E233C66670033064F /* Frameworks */,
+				BB8C6F4F233C66670033064F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BB8C6F53233C66670033064F /* PBXTargetDependency */,
+			);
+			name = Wct_buttonDelaySwizzlingDemoTests;
+			productName = Wct_buttonDelaySwizzlingDemoTests;
+			productReference = BB8C6F51233C66670033064F /* Wct_buttonDelaySwizzlingDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BB8C6F5B233C66670033064F /* Wct_buttonDelaySwizzlingDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB8C6F6B233C66670033064F /* Build configuration list for PBXNativeTarget "Wct_buttonDelaySwizzlingDemoUITests" */;
+			buildPhases = (
+				BB8C6F58233C66670033064F /* Sources */,
+				BB8C6F59233C66670033064F /* Frameworks */,
+				BB8C6F5A233C66670033064F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BB8C6F5E233C66670033064F /* PBXTargetDependency */,
+			);
+			name = Wct_buttonDelaySwizzlingDemoUITests;
+			productName = Wct_buttonDelaySwizzlingDemoUITests;
+			productReference = BB8C6F5C233C66670033064F /* Wct_buttonDelaySwizzlingDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BB8C6F31233C66650033064F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = EJIAJX_wct;
+				TargetAttributes = {
+					BB8C6F38233C66650033064F = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					BB8C6F50233C66670033064F = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = BB8C6F38233C66650033064F;
+					};
+					BB8C6F5B233C66670033064F = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = BB8C6F38233C66650033064F;
+					};
+				};
+			};
+			buildConfigurationList = BB8C6F34233C66650033064F /* Build configuration list for PBXProject "Wct_buttonDelaySwizzlingDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BB8C6F30233C66650033064F;
+			productRefGroup = BB8C6F3A233C66650033064F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BB8C6F38233C66650033064F /* Wct_buttonDelaySwizzlingDemo */,
+				BB8C6F50233C66670033064F /* Wct_buttonDelaySwizzlingDemoTests */,
+				BB8C6F5B233C66670033064F /* Wct_buttonDelaySwizzlingDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BB8C6F37233C66650033064F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB8C6F49233C66670033064F /* LaunchScreen.storyboard in Resources */,
+				BB8C6F46233C66670033064F /* Assets.xcassets in Resources */,
+				BB8C6F44233C66650033064F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB8C6F4F233C66670033064F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB8C6F5A233C66670033064F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BB8C6F35233C66650033064F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB8C6F41233C66650033064F /* ViewController.m in Sources */,
+				BB8C6F4C233C66670033064F /* main.m in Sources */,
+				BB8C6F70233C66960033064F /* UIControl+ButtonDelaySwizzling_h.m in Sources */,
+				BB8C6F73233C66C10033064F /* UIButton+ButtonDelaySwizzling.m in Sources */,
+				BB8C6F3E233C66650033064F /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB8C6F4D233C66670033064F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB8C6F56233C66670033064F /* Wct_buttonDelaySwizzlingDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB8C6F58233C66670033064F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB8C6F61233C66670033064F /* Wct_buttonDelaySwizzlingDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BB8C6F53233C66670033064F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BB8C6F38233C66650033064F /* Wct_buttonDelaySwizzlingDemo */;
+			targetProxy = BB8C6F52233C66670033064F /* PBXContainerItemProxy */;
+		};
+		BB8C6F5E233C66670033064F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BB8C6F38233C66650033064F /* Wct_buttonDelaySwizzlingDemo */;
+			targetProxy = BB8C6F5D233C66670033064F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BB8C6F42233C66650033064F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BB8C6F43233C66650033064F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BB8C6F47233C66670033064F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BB8C6F48233C66670033064F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BB8C6F63233C66670033064F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		BB8C6F64233C66670033064F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BB8C6F66233C66670033064F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UJH48WSBNE;
+				INFOPLIST_FILE = Wct_buttonDelaySwizzlingDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "wct-ejiajx.Wct-buttonDelaySwizzlingDemo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BB8C6F67233C66670033064F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UJH48WSBNE;
+				INFOPLIST_FILE = Wct_buttonDelaySwizzlingDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "wct-ejiajx.Wct-buttonDelaySwizzlingDemo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BB8C6F69233C66670033064F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UJH48WSBNE;
+				INFOPLIST_FILE = Wct_buttonDelaySwizzlingDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "wct-ejiajx.Wct-buttonDelaySwizzlingDemoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Wct_buttonDelaySwizzlingDemo.app/Wct_buttonDelaySwizzlingDemo";
+			};
+			name = Debug;
+		};
+		BB8C6F6A233C66670033064F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UJH48WSBNE;
+				INFOPLIST_FILE = Wct_buttonDelaySwizzlingDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "wct-ejiajx.Wct-buttonDelaySwizzlingDemoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Wct_buttonDelaySwizzlingDemo.app/Wct_buttonDelaySwizzlingDemo";
+			};
+			name = Release;
+		};
+		BB8C6F6C233C66670033064F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UJH48WSBNE;
+				INFOPLIST_FILE = Wct_buttonDelaySwizzlingDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "wct-ejiajx.Wct-buttonDelaySwizzlingDemoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Wct_buttonDelaySwizzlingDemo;
+			};
+			name = Debug;
+		};
+		BB8C6F6D233C66670033064F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UJH48WSBNE;
+				INFOPLIST_FILE = Wct_buttonDelaySwizzlingDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "wct-ejiajx.Wct-buttonDelaySwizzlingDemoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Wct_buttonDelaySwizzlingDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BB8C6F34233C66650033064F /* Build configuration list for PBXProject "Wct_buttonDelaySwizzlingDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB8C6F63233C66670033064F /* Debug */,
+				BB8C6F64233C66670033064F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB8C6F65233C66670033064F /* Build configuration list for PBXNativeTarget "Wct_buttonDelaySwizzlingDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB8C6F66233C66670033064F /* Debug */,
+				BB8C6F67233C66670033064F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB8C6F68233C66670033064F /* Build configuration list for PBXNativeTarget "Wct_buttonDelaySwizzlingDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB8C6F69233C66670033064F /* Debug */,
+				BB8C6F6A233C66670033064F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB8C6F6B233C66670033064F /* Build configuration list for PBXNativeTarget "Wct_buttonDelaySwizzlingDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB8C6F6C233C66670033064F /* Debug */,
+				BB8C6F6D233C66670033064F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BB8C6F31233C66650033064F /* Project object */;
+}
