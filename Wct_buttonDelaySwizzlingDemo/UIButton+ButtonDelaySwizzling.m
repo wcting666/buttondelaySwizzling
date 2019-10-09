@@ -18,57 +18,70 @@ static const void *isNeedDelayClickKey = &isNeedDelayClickKey;
 
 @implementation UIButton (ButtonDelaySwizzling)
 
-//+(void)load
-//{
-//    static dispatch_once_t onceToken;
-//    dispatch_once(&onceToken, ^{
-//        Class class = [self class];
-//
-//        SEL originalSel = @selector(sendAction:to:forEvent:);
-//        SEL swizzlingSel = @selector(em_sendAction:to:forEvent:);
-//
-//        Method originalMethod = class_getInstanceMethod(class, originalSel);
-//        Method swizzlingMethod = class_getInstanceMethod(class, swizzlingSel);
-//
-//        BOOL isAddMethod = class_addMethod(class, swizzlingSel, method_getImplementation(originalMethod), method_getTypeEncoding(originalMethod));
++(void)load
+{
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        Class class = [self class];
+
+        SEL originalSel = @selector(sendAction:to:forEvent:);
+        SEL swizzlingSel = @selector(em_sendAction:to:forEvent:);
+
+        Method originalMethod = class_getInstanceMethod(class, originalSel);
+        Method swizzlingMethod = class_getInstanceMethod(class, swizzlingSel);
+
+        //经过评论区大佬指点,发现这段代码有问题m,会造成文章中提到的崩溃,完美的写法应该是下面注释了的代码
+        BOOL isAddMethod = class_addMethod(class, swizzlingSel, method_getImplementation(originalMethod), method_getTypeEncoding(originalMethod));
+
+        if (isAddMethod) {
+            class_replaceMethod(class, originalSel, method_getImplementation(swizzlingMethod), method_getTypeEncoding(swizzlingMethod));
+        }else{
+            method_exchangeImplementations(originalMethod, swizzlingMethod);
+        }
+        
+        //逻辑更严谨的代码,在button的category里也能完美适用,不过在UIControl的分类里实现也是个新的思路
+        /*添加原有方法originalSel,如果添加成功则说明该类没有原有方法originalSel,是继承自己父类的
+         *实现原有方法的imp,通过class_replaceMethod替换swizzlingSel实现为originalMethod,这时originalSel-->swizzlingMethod的IMP,swizzlingSel-->originalMethod的IMP
+         */
+//        BOOL isAddMethod = class_addMethod(class, originalSel, method_getImplementation(swizzlingMethod), method_getTypeEncoding(swizzlingMethod));
 //
 //        if (isAddMethod) {
-//            class_replaceMethod(class, originalSel, method_getImplementation(swizzlingMethod), method_getTypeEncoding(swizzlingMethod));
+//            class_replaceMethod(class, swizzlingSel, method_getImplementation(originalMethod), method_getTypeEncoding(originalMethod));
 //        }else{
 //            method_exchangeImplementations(originalMethod, swizzlingMethod);
 //        }
-//
-//
-//    });
-//}
-//
-//-(void)em_sendAction:(SEL)action to:(id)target forEvent:(UIEvent *)event
-//{
-//    if ([self isKindOfClass:[UIButton class]]) {//wct20190925 textfield输入时候崩溃添加判断，只管理button的点击事件
-//        if (self.isNeedDelayClick) {//需要延迟点击
-//
-//            if (self.timeInteralOfClickButton <= 0) {//没设置时间间隔，默认为0.4秒
-//                self.timeInteralOfClickButton = 0.4;
-//            }
-//
-//            //当前时间减上次点击时间，间隔大于规定时间间隔，button可点击
-//            BOOL isCanAction = NSDate.date.timeIntervalSince1970 - self.timeInteralEventLastTime >= self.timeInteralOfClickButton;
-//
-//            if (self.timeInteralOfClickButton > 0) {//更新当前点击时间
-//                self.timeInteralEventLastTime = NSDate.date.timeIntervalSince1970;
-//            }
-//
-//            if (isCanAction) {
-//                [self em_sendAction:action to:target forEvent:event];
-//            }
-//        }else{
-//            [self em_sendAction:action to:target forEvent:event];
-//        }
-//    }else{
-//        [self em_sendAction:action to:target forEvent:event];
-//    }
-//
-//}
+
+
+    });
+}
+
+-(void)em_sendAction:(SEL)action to:(id)target forEvent:(UIEvent *)event
+{
+    if ([self isKindOfClass:[UIButton class]]) {//wct20190925 textfield输入时候崩溃添加判断，只管理button的点击事件
+        if (self.isNeedDelayClick) {//需要延迟点击
+
+            if (self.timeInteralOfClickButton <= 0) {//没设置时间间隔，默认为0.4秒
+                self.timeInteralOfClickButton = 0.4;
+            }
+
+            //当前时间减上次点击时间，间隔大于规定时间间隔，button可点击
+            BOOL isCanAction = NSDate.date.timeIntervalSince1970 - self.timeInteralEventLastTime >= self.timeInteralOfClickButton;
+
+            if (self.timeInteralOfClickButton > 0) {//更新当前点击时间
+                self.timeInteralEventLastTime = NSDate.date.timeIntervalSince1970;
+            }
+
+            if (isCanAction) {
+                [self em_sendAction:action to:target forEvent:event];
+            }
+        }else{
+            [self em_sendAction:action to:target forEvent:event];
+        }
+    }else{
+        [self em_sendAction:action to:target forEvent:event];
+    }
+
+}
 
 #pragma mark - association
 -(void)setTimeInteralOfClickButton:(NSTimeInterval)timeInteralOfClickButton

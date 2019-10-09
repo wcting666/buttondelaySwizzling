@@ -29,10 +29,13 @@ static const void *isNeedDelayClickKey = &isNeedDelayClickKey;
         Method originalMethod = class_getInstanceMethod(class, originalSel);
         Method swizzlingMethod = class_getInstanceMethod(class, swizzlingSel);
         
-        BOOL isAddMethod = class_addMethod(class, swizzlingSel, method_getImplementation(originalMethod), method_getTypeEncoding(originalMethod));
+        /*添加原有方法originalSel,如果添加成功则说明该类没有原有方法originalSel,是继承自己父类的
+         *实现原有方法的imp,通过class_replaceMethod替换swizzlingSel实现为originalMethod,这时originalSel-->swizzlingMethod的IMP,swizzlingSel-->originalMethod的IMP
+         */
+        BOOL isAddMethod = class_addMethod(class, originalSel, method_getImplementation(swizzlingMethod), method_getTypeEncoding(swizzlingMethod));
         
         if (isAddMethod) {
-            class_replaceMethod(class, originalSel, method_getImplementation(swizzlingMethod), method_getTypeEncoding(swizzlingMethod));
+            class_replaceMethod(class, swizzlingSel, method_getImplementation(originalMethod), method_getTypeEncoding(originalMethod));
         }else{
             method_exchangeImplementations(originalMethod, swizzlingMethod);
         }
